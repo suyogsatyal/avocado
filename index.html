@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Avocado Confessions</title>
+</head>
+<body>
+    <nav class="h-30">
+        <div class="nav-inside flex justify-between flex-row py-2 px-4 md:px-12">
+            <div class="flex">
+                <a href="#" class="logo">
+                    <img class=" h-20" src="./img/logo.png" alt="logo" srcset="">
+                </a>
+                <div class="logo-text text-white text-xl flex px-3 h-max justify-center items-center">
+                    <a href="#" class="pb-6 raleway-bold">
+                       <br> Avocado Confessions
+                    </a>
+                </div>
+            </div>
+            <!---center the a tag vertically-->
+            
+            
+            <div class="flex flex-row justify-center items-center">
+                <a href="http://facebook.com" class="sm:px-3">
+                    <img src="./img/square-facebook.svg" class="w-10" alt="">
+                </a>
+                <a href="http://facebook.com" class="sm:px-3">
+                    <img src="./img/instagram.svg" class="w-10" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main text-center items-center">
+        <div class="main-content py-8 raleway-regular text-xl">
+            Leave Your Anonymous Confession To
+            <br>
+            <span class="raleway-bold text-3xl text-violet-800">
+                Avocado Confessions
+            </span>
+        </div>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="hidden" name="_next" value="./thankyou.html" />
+            <input type="hidden" name="_captcha" value="false" />
+            <textarea name="message" placeholder="Your Message" class="raleway-thin text-lg input-box rounded border border-violet-800 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-700  sm:w-8/12 w-10/12 py-2 px-4 my-2"></textarea>
+            <br>
+            <button type="submit" class="raleway-regular text-lg submit-btn py-2 px-4 my-2">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
